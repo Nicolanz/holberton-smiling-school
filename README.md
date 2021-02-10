@@ -28,7 +28,7 @@ This is a visual website which does not have backend functionallity. In order to
 ## Views:
 
 <p align="center">
-    <img width="500" height="850" src="images/readme_views.png">
+    <img width="700" height="800" src="images/readme_views.png">
 </p>
 
 ------------
