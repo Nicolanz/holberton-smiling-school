@@ -27,6 +27,11 @@
     src: url(fonts/SourceSansPro-It.otf);
     font-style: normal;
 }
+@font-face{
+    font-family: 'Italic-Light Source Sans Pro';
+    src: url(fonts/SourceSansPro-ExtraLightIt.otf);
+    font-style: normal;
+}
 
 /* Root variabes */
 :root{
@@ -35,7 +40,9 @@
     --font-bold: Bold Source Sans Pro;
     --font-light: Light Source Sans Pro;
     --font-italic: Italic Source Sans Pro;
-    --btn-color: #C271FF;
+    --font-italic-light: Italic-Light Source Sans Pro;
+    --holberton-icons: HolbertonIcons;
+    --global-color: #C271FF;
 }
 
 
@@ -48,7 +55,7 @@
 }
 
 .btn-global{
-    background-color: var(--btn-color) !important;
+    background-color: var(--global-color) !important;
     font-family: var(--font-regular);
     color: var(--color-white) !important;
     padding: 12px !important;
@@ -82,7 +89,6 @@ nav span{
     width: 25%;
     height: 25%;
 }
-
 /* description header styles */
 div div div h1{
     font-family: var(--font-bold);
@@ -93,7 +99,7 @@ div div div+span{
     font-family: var(--font-light);
 }
 .profile_images{
-    width: 150px;
+    width: 170px;
     height: 170px;
     border-radius: 50%;
 }
@@ -104,6 +110,36 @@ div div .profile_images+h3{
 div div h3+p{
     font-family: var(--font-italic) !important;
     font-size: 15px;
+}
+
+/* Corousel and my_slider styles */
+
+.my_slider{
+    min-height: 350px;
+    background-color: var(--global-color);
+}
+.next-icon, .prev-icon{
+    font-family: var(--holberton-icons);
+    font-size: 100px;
+}
+.div-slider{
+    min-height: 350px ;
+}
+.my_slider .div-slider div img{
+    border-radius: 50%;
+    width: 190px;
+    height: 190px;
+}
+.my_slider .div-slider div p{
+    font-family: var(--font-light);
+    font-size: 20px;
+}
+.my_slider .div-slider div div h2{
+    font-family: var(--font-bold);
+    font-size: 18px;
+}
+.my_slider .div-slider div div span{
+    font-family: var(--font-italic-light);
 }
 
 @media only screen and (max-width: 500px){
