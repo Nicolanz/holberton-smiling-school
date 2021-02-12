@@ -1,0 +1,126 @@
+
+
+/* fonts */
+
+@font-face{
+    font-family: "HolbertonIcons";
+    src: url(fonts/holberton_school-icon.ttf);
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Regular Source Sans Pro';
+    src: url(fonts/SourceSansPro-Regular.otf);
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Bold Source Sans Pro';
+    src: url(fonts/SourceSansPro-Bold.otf);
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Light Source Sans Pro';
+    src: url(fonts/SourceSansPro-ExtraLight.otf);
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Italic Source Sans Pro';
+    src: url(fonts/SourceSansPro-It.otf);
+    font-style: normal;
+}
+
+/* Root variabes */
+:root{
+    --color-white: white;
+    --font-regular: Regular Source Sans Pro;
+    --font-bold: Bold Source Sans Pro;
+    --font-light: Light Source Sans Pro;
+    --font-italic: Italic Source Sans Pro;
+    --btn-color: #C271FF;
+}
+
+
+/* global styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn-global{
+    background-color: var(--btn-color) !important;
+    font-family: var(--font-regular);
+    color: var(--color-white) !important;
+    padding: 12px !important;
+    border-radius: 25px 25px 25px 25px !important;
+    box-shadow: 20px;
+}
+.btn-global:hover, .btn-global:active{
+    opacity: 0.9
+}
+
+
+/* header styles */
+
+.header{
+    background-image: url('images/pic_1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: auto;
+}
+
+/* nav styles */
+nav span{
+    color: var(--color-white);
+    font-size: 25px;
+}
+.font{
+    font-family: var(--font-regular);
+}
+.imgs{
+    width: 25%;
+    height: 25%;
+}
+
+/* description header styles */
+div div div h1{
+    font-family: var(--font-bold);
+    font-size: 80px;
+}
+div div div+span{
+    font-size: 30px;
+    font-family: var(--font-light);
+}
+.profile_images{
+    width: 150px;
+    height: 170px;
+    border-radius: 50%;
+}
+div div .profile_images+h3{
+    font-family: var(--font-regular) !important;
+    font-size: 20px !important;
+}
+div div h3+p{
+    font-family: var(--font-italic) !important;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 500px){
+    /* Queries description header styles */
+    div div div h1{
+        font-size: 70px !important;
+    }
+    .profile_images{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+    }
+    div div div+span{
+        font-size: 25px;
+        font-family: var(--font-light);
+    }
+    div div h3+p{
+        font-size: 13px;
+    }
+}
