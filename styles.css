@@ -142,6 +142,24 @@ div div h3+p{
     font-family: var(--font-italic-light);
 }
 
+/* Videos-Carousel */
+.Videos-Carousel{
+    min-height: 450px;
+    max-height: auto;
+}
+.Videos-Carousel .arrows{
+    color: grey;
+}
+.Videos-Carousel .video_targets{
+    
+}
+.Videos-Carousel .video_targets #video_1{
+    background-image: url('images/thumbnail_4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 @media only screen and (max-width: 500px){
     /* Queries description header styles */
     div div div h1{
