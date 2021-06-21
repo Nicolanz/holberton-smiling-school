@@ -35,146 +35,134 @@
 
 /* Root variabes */
 :root{
-    --color-white: white;
     --font-regular: Regular Source Sans Pro;
     --font-bold: Bold Source Sans Pro;
     --font-light: Light Source Sans Pro;
     --font-italic: Italic Source Sans Pro;
     --font-italic-light: Italic-Light Source Sans Pro;
     --holberton-icons: HolbertonIcons;
+    --color-white: #ffff;
     --global-color: #C271FF;
+    --extra-sm-font-size:3rem;
+    --sm-font-size: 4rem;
+    --md-font-size: 5rem;
+    --lg-font-size: 6rem;
+    --extra-lg-font-size: 7rem;
+
 }
 
-
 /* global styles */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 .btn-global{
     background-color: var(--global-color) !important;
     font-family: var(--font-regular);
     color: var(--color-white) !important;
     padding: 12px !important;
-    border-radius: 25px 25px 25px 25px !important;
-    box-shadow: 20px;
+    border-radius: 25px !important;
 }
 .btn-global:hover, .btn-global:active{
     opacity: 0.9
 }
-
+.regular-font{
+    font-family: var(--font-regular);
+}
+.light-font{
+    font-family: var(--font-light);
+}
+.bold-font{
+    font-family: var(--font-bold);
+}
+.holberton_icons-font{
+    font-family: var(--holberton-icons);
+}
 
 /* header styles */
-
 .header{
     background-image: url('images/pic_1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    max-height: auto;
+    min-height:auto;
+}
+.header a:hover{
+    color: var(--global-color) !important;
 }
 
 /* nav styles */
-nav span{
-    color: var(--color-white);
-    font-size: 25px;
+.header nav{
+    margin-bottom: 100px;
 }
-.font{
-    font-family: var(--font-regular);
+.header nav .navbar-toggler{
+    outline: none;
+    border: none;
+}
+.header nav span{
+    margin-top: -20px;
+    color: var(--color-white);
+    font-size: 35px;
 }
 .imgs{
     width: 25%;
     height: 25%;
 }
-/* description header styles */
-div div div h1{
-    font-family: var(--font-bold);
-    font-size: 80px;
+
+/* pros styles */
+.header .pros{
+    margin-top: 140px;
 }
-div div div+span{
-    font-size: 30px;
-    font-family: var(--font-light);
+.header .pros div p{
+    font-size: 1.5rem;
 }
-.profile_images{
-    width: 170px;
-    height: 170px;
-    border-radius: 50%;
+.header .pros div p span{
+    color: var(--global-color);
 }
-div div .profile_images+h3{
-    font-family: var(--font-regular) !important;
-    font-size: 20px !important;
+.header .pros img{
+   border-radius: 50%;
+   width: 40%;
+   height: 50%;
 }
-div div h3+p{
-    font-family: var(--font-italic) !important;
-    font-size: 15px;
+.header .pros div div h3{
+    font-size: 1.1rem;
+}
+.header .pros div div p{
+    font-size: 0.9rem;
 }
 
-/* Corousel and my_slider styles */
 
-.my_slider{
-    min-height: 350px;
-    background-color: var(--global-color);
-}
-.next-icon, .prev-icon{
-    font-family: var(--holberton-icons);
-    font-size: 100px;
-}
-.div-slider{
-    min-height: 350px ;
-}
-.my_slider .div-slider div img{
-    border-radius: 50%;
-    width: 190px;
-    height: 190px;
-}
-.my_slider .div-slider div p{
-    font-family: var(--font-light);
-    font-size: 20px;
-}
-.my_slider .div-slider div div h2{
-    font-family: var(--font-bold);
-    font-size: 18px;
-}
-.my_slider .div-slider div div span{
-    font-family: var(--font-italic-light);
-}
-
-/* Videos-Carousel */
-.Videos-Carousel{
-    min-height: 450px;
-    max-height: auto;
-}
-.Videos-Carousel .arrows{
-    color: grey;
-}
-.Videos-Carousel .video_targets{
-    
-}
-.Videos-Carousel .video_targets #video_1{
-    background-image: url('images/thumbnail_4.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-@media only screen and (max-width: 500px){
-    /* Queries description header styles */
-    div div div h1{
-        font-size: 70px !important;
+/* media queries */
+@media only screen and (max-width: 576px){
+    .first_title{
+        font-size: var(--extra-sm-font-size);
     }
-    .profile_images{
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
+    .header .pros img{
+        width: 80px;
+        height: 80px;
     }
-    div div div+span{
-        font-size: 25px;
-        font-family: var(--font-light);
+}
+@media only screen and (min-width: 576px){
+    .first_title{
+        font-size: var(--sm-font-size);
     }
-    div div h3+p{
-        font-size: 13px;
+    .header .pros img{
+        width: 100px;
+        height: 100px;
+    }
+}
+@media only screen and (min-width: 786px){
+    .first_title{
+        font-size: var(--md-font-size);
+    }
+    .header .pros img{
+        width: 150px;
+        height: 150px;
+    }
+}
+@media only screen and (min-width: 960px){
+    .first_title{
+        font-size: var(--extra-lg-font-size);
     }
 }
