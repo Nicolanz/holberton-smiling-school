@@ -161,6 +161,11 @@
     font-family: var(--font-italic-light);
 }
 
+/* videos carousel styles */
+.videos-slider{
+    min-height: 350px;
+    background: grey
+}
 
 /* media queries */
 @media only screen and (max-width: 576px){
