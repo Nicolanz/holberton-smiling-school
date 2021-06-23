@@ -235,6 +235,9 @@
         width: 80px;
         height: 80px;
     }
+    .next-icon, .prev-icon{
+        font-size: 50px;
+    }
 }
 @media only screen and (min-width: 576px){
     .first_title{
@@ -243,6 +246,9 @@
     .header .pros img{
         width: 100px;
         height: 100px;
+    }
+    .next-icon, .prev-icon{
+        font-size: 50px;
     }
 }
 @media only screen and (min-width: 786px){
@@ -253,9 +259,16 @@
         width: 150px;
         height: 150px;
     }
+    .next-icon, .prev-icon{
+        font-size: 75px;
+    }
 }
 @media only screen and (min-width: 960px){
     .first_title{
         font-size: var(--extra-lg-font-size);
+    }
+    .next-icon, .prev-icon{
+        font-family: var(--holberton-icons);
+        font-size: 100px;
     }
 }
