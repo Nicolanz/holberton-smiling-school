@@ -42,6 +42,9 @@
     --font-italic-light: Italic-Light Source Sans Pro;
     --holberton-icons: HolbertonIcons;
     --color-white: #ffff;
+    --black-color: #000;
+    --black-cards-color: #071629;
+    --grey-cards-color: #979797;
     --global-color: #C271FF;
     --extra-sm-font-size:3rem;
     --sm-font-size: 4rem;
@@ -163,8 +166,38 @@
 
 /* videos carousel styles */
 .videos-slider{
-    min-height: 350px;
-    background: grey
+    min-height: 600px;
+    max-height: auto;
+    background: var(--color-white);
+}
+.videos-slider div p{
+    font-size: 1.5rem;
+}
+.videos-slider div p span{
+    color: var(--global-color);
+}
+.videos-slider a .prev-icon, .videos-slider a .next-icon{
+    color: var(--black-cards-color);
+}
+.videos-slider div div .row div .card-deck .c-body h5{
+    color: var(--black-cards-color);
+}
+.videos-slider div div .row div .card-deck .c-body p{
+    font-size: 1rem;
+    color: var(--grey-cards-color);
+}
+.videos-slider div div .row div .card-deck .c-body div h6,
+.videos-slider div div .row div .card-deck .c-body div span{
+    color: var(--global-color);
+}
+.videos-slider div div .row div .card-deck .c-body p + div img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.videos-slider div div .row div .card-deck .c-body div + div img{
+    width:27px;
+    height: 27px;
 }
 
 /* media queries */
