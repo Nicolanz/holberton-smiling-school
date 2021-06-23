@@ -45,6 +45,7 @@
     --black-color: #000;
     --black-cards-color: #071629;
     --grey-cards-color: #979797;
+    --blue-cp-footer-color: #293646;
     --blue-members-color: #071629;
     --global-color: #C271FF;
     --extra-sm-font-size:3rem;
@@ -224,6 +225,29 @@
 }
 .members div p{
     font-size: .9rem;
+}
+
+/* footer styles */
+.footer{
+    min-height:200px;
+    max-height: auto;
+    background: var(--blue-members-color);
+}
+.footer div div img{
+    width: 30px;
+    height: 30px;
+}
+.footer div div img+img{
+    width: 140px;
+    height: 35px;
+}
+.footer div div span{
+    font-family: var(--holberton-icons);
+    font-size: 2rem;
+}
+.footer span p{
+    font-family: var(--font-regular);
+    color: var(--blue-cp-footer-color);
 }
 
 /* media queries */
