@@ -45,6 +45,7 @@
     --black-color: #000;
     --black-cards-color: #071629;
     --grey-cards-color: #979797;
+    --blue-members-color: #071629;
     --global-color: #C271FF;
     --extra-sm-font-size:3rem;
     --sm-font-size: 4rem;
@@ -198,6 +199,31 @@
 .videos-slider div div .row div .card-deck .c-body div + div img{
     width:27px;
     height: 27px;
+}
+
+/* members styles */
+.members{
+    background: var(--blue-members-color);
+    margin-top: 100px;
+    min-height: 400px;
+    max-height: auto;
+    color: var(--color-white);
+}
+.members div h2{
+    font-size: 1.5rem;
+}
+.members div h2 span{
+    color: var(--global-color);
+}
+.members div img{
+    width: 55px;
+    height: 45px;
+}
+.members div h6{
+    font-size: 1.1rem;
+}
+.members div p{
+    font-size: .9rem;
 }
 
 /* media queries */
