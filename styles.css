@@ -1,4 +1,4 @@
-
+/* HOMEPAGE */
 
 /* fonts */
 
@@ -47,6 +47,7 @@
     --grey-cards-color: #979797;
     --blue-cp-footer-color: #293646;
     --blue-members-color: #071629;
+    --green-check-color: #82D24F;
     --global-color: #C271FF;
     --extra-sm-font-size:3rem;
     --sm-font-size: 4rem;
@@ -250,6 +251,68 @@
     color: var(--blue-cp-footer-color);
 }
 
+/* ---------------------------------------------------------------- */
+
+/* PRICING PAGE */
+
+.pricing-header{
+    background-image: url("images/pic_2.jpg");
+    min-height: auto;
+    max-height: auto;
+}
+.pricing-header div h3{
+    font-size: 2rem;
+}
+.pricing-header div span img{
+    width: 35px;
+    height: 30px;
+}
+.pricing-header div span img + img{
+    width: 160px;
+    height: 40px;
+}
+.pricing-header div span h1{
+    font-size: 3rem;
+    margin-top: 100px;
+}
+
+
+.pricing-header .prices{
+    height: 250px;
+}
+.pricing-header .prices div span{
+    color: var(--grey-cards-color);
+}
+.pricing-header table thead td p{
+    font-size: .7rem ;
+}
+
+
+
+.pricing-header div table td, .pricing-header div table th {
+    border: none;
+}
+.pricing-header .borders{
+    border-bottom: 2px solid var(--blue-cp-footer-color) !important;
+}
+
+.pricing-header div table h1{
+    font-size: 2.5rem;
+}
+.pricing-header div table th span{
+    font-size: .9rem;
+    color: var(--grey-prices-color);
+}
+.pricing-header div table tbody tr td p.checks{
+    font-size: 2rem;
+    color: var(--green-check-color);
+}
+.pricing-header div table tbody tr th img{
+    width: 120px;
+    height: 50px;
+}
+
+
 /* media queries */
 @media only screen and (max-width: 576px){
     .first_title{
@@ -261,6 +324,17 @@
     }
     .next-icon, .prev-icon{
         font-size: 50px;
+    }
+    .pricing-header div h3{
+        font-size: 1.5rem;
+    }
+    .pricing-header div span img{
+        width: 30px;
+        height: 25px;
+    }
+    .pricing-header div span img + img{
+        width: 110px;
+        height: 35px;
     }
 }
 @media only screen and (min-width: 576px){
@@ -274,6 +348,14 @@
     .next-icon, .prev-icon{
         font-size: 50px;
     }
+    .pricing-header div span img{
+        width: 30px;
+        height: 25px;
+    }
+    .pricing-header div span img + img{
+        width: 150px;
+        height: 40px;
+    }
 }
 @media only screen and (min-width: 786px){
     .first_title{
@@ -285,6 +367,14 @@
     }
     .next-icon, .prev-icon{
         font-size: 75px;
+    }
+    .pricing-header div span img{
+        width: 30px;
+        height: 25px;
+    }
+    .pricing-header div span img + img{
+        width: 150px;
+        height: 40px;
     }
 }
 @media only screen and (min-width: 960px){
