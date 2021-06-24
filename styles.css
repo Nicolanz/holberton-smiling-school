@@ -376,6 +376,31 @@
     color: white;
 }
 
+/* results styles */
+.results-videos > span h6{
+    color: var(--grey-cards-color);
+}
+.results-videos .card-deck .c-body h5{
+    color: var(--black-cards-color);
+} 
+.results-videos .card-deck .c-body p{
+    font-size: 1rem;
+    color: var(--grey-cards-color);
+}
+.results-videos .card-deck .c-body div h6,
+.results-videos .card-deck .c-body div span{
+    color: var(--global-color);
+}
+.results-videos .card-deck .c-body p + div img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.results-videos .card-deck .c-body div + div img{
+    width:27px;
+    height: 27px;
+}
+
 /* media queries */
 @media only screen and (max-width: 576px){
     .first_title{
