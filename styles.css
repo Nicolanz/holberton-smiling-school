@@ -45,6 +45,7 @@
     --black-color: #000;
     --black-cards-color: #071629;
     --grey-cards-color: #979797;
+
     --blue-cp-footer-color: #293646;
     --blue-members-color: #071629;
     --green-check-color: #82D24F;
@@ -255,6 +256,8 @@
 
 /* PRICING PAGE */
 
+/* pricing header styles */
+
 .pricing-header{
     background-image: url("images/pic_2.jpg");
     min-height: auto;
@@ -276,6 +279,7 @@
     margin-top: 100px;
 }
 
+/* prices grid styles */
 
 .pricing-header .prices{
     height: 250px;
@@ -286,16 +290,12 @@
 .pricing-header table thead td p{
     font-size: .7rem ;
 }
-
-
-
 .pricing-header div table td, .pricing-header div table th {
     border: none;
 }
 .pricing-header .borders{
     border-bottom: 2px solid var(--blue-cp-footer-color) !important;
 }
-
 .pricing-header div table h1{
     font-size: 2.5rem;
 }
@@ -310,6 +310,17 @@
 .pricing-header div table tbody tr th img{
     width: 120px;
     height: 50px;
+}
+
+/* FAQ styles */
+.faq span h1{
+    font-size: 5rem;
+}
+.faq div div h6{
+    font-size: 1.1rem;
+}
+.faq div div p{
+    color: var(--grey-cards-color);
 }
 
 
