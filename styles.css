@@ -341,7 +341,8 @@
 /* courses header styles */
 
 .courses-header{
-    height: 300px;
+    min-height: 400px;
+    max-height: auto;
     background-image: url("images/pic_3.jpg");
 }
 .courses-header nav{
@@ -352,6 +353,27 @@
 }
 .courses-header div h1 span{
     color: var(--global-color);
+}
+
+/* search div */
+.courses-header .search-div{
+    margin-top: 100px;
+    min-height: 200px;
+    max-height: auto;
+    background: var(--global-color);
+}
+.courses-header .search-div form div input, .courses-header .search-div form div select{
+    border: none;
+    background: rgba(255, 255, 255, 0.342);
+    font-family: var(--font-light);
+    color: white;
+}
+.courses-header .search-div form div label{
+    font-size: 0.8rem;
+}
+.courses-header .search-div form div .form-control::placeholder{
+    font-family: var(--holberton-icons), var(--font-light);
+    color: white;
 }
 
 /* media queries */
