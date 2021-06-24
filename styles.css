@@ -313,6 +313,9 @@
 }
 
 /* FAQ styles */
+.faq{
+    margin-bottom: 150px;
+}
 .faq span h1{
     font-size: 5rem;
 }
